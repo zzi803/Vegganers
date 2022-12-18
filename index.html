@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veganner</title>
+
+
+</head>
+
+
+
+<style type="text/css">
+
+	* {
+		font-family: 'Noto Sans KR', sans-serif;
+		list-style: none;
+		text-decoration: none;
+    box-sizing: border-box;
+	}
+
+	header {
+		border-collapse: collapse;
+		margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+	}
+
+	.container {
+		background-image: url("https://i.postimg.cc/jSnnccpX/mockup-4020150.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center; 
+		width: 100%;
+		height: 700px;
+    border-radius: 40px;
+	}
+
+
+	.navibar {
+		display: flex;
+		width: 1280px;
+		margin: auto;
+		height: 50px;
+	}
+
+	.navibar #logo{
+		display: flex;
+		line-height: 50px;
+		margin-top: 30px;
+    color: white;
+    font-size: 30px;
+	}
+
+	.navibar #menu {
+		display: flex;
+		justify-content: flex-end;
+		line-height: 50px;
+		width: calc(1440px - 720px);
+		margin-top: 30px;
+	}
+
+	.navibar #menu li{
+		margin-left: 30px;
+    font-size: 16px;
+	}
+
+	.navibar #menu li a:hover{
+		display: inline-block;
+    background: lightgray;
+	}
+
+	.navibar #menu li a{
+		line-height: 30px;
+		text-decoration: none;
+		display: block;
+		color: black;
+    display: inline-block;
+		border: 2px solid black;
+		border-radius: 20px;
+    background: white;
+    padding-right: 14px;
+    padding-left: 14px;
+	}
+
+	.list-btn{
+		display: flex;
+    justify-content:right;
+		align-items: center;
+    padding-right: 80px;
+    margin-top: -10px;
+	}
+
+	.list-btn li a{
+		margin: 10px;
+	}
+
+
+	h1{
+    color: white;
+		text-align: right;
+		font-weight: 500;
+		font-size: 120px;
+    margin-top: 490px;
+    background: 
+	}
+
+
+
+/*-card-*/
+
+        h2{
+            font-size: 80px;
+            color: black;
+            text-align: left;
+            margin-top: 150px;
+            margin-bottom: 18px;
+            font-weight: 500;
+          margin-left: -50px;
+        }
+
+        h3{
+            font-size: 80px;
+            color: black;
+            text-align: right;
+            margin-top: 150px;
+            margin-bottom: 18px;
+            font-weight: 500;
+          margin-right: -50px;
+        }
+
+        .card{
+            display: block;
+            margin-top: 150px;
+            width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 50px;
+            padding-right: 50px;;
+            flex-wrap: wrap;
+            gap: 50px;
+            text-align: center;
+        }
+
+        .card_img{
+            position: relative;
+            display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          border-radius: 50%;
+        }
+
+        .card_item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .card_img img{
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            transition: .4s ease;
+        }
+
+        .main-image img{
+			      transition: .4s ease;
+            margin-bottom: 100px;
+		    }
+
+        .card_img img:hover{
+			     transform: scale(1.05);
+		    }
+
+
+.wrap{
+  display: flex;
+  width: 1280px;
+  margin-left: -50px;
+  font-size: 20px;
+}
+
+.wrap p{
+  flex: 1 0 0;
+}
+.wrap div{
+  flex: 1 0 0;
+}
+.wrap img{
+  width: 100%;
+  height: 300px;
+}
+
+
+
+.wrap2{
+  width: 1280px;
+  margin-left: -50px;
+}
+
+.wrap2 img{
+  width: 100%;
+  height: 420px;
+}
+
+
+/*-box-*/
+
+        .box{
+            margin-top: 150px;
+            width: 1028px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box_img{
+            position: relative;
+        }
+        .box_item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box_img img{
+            width: 512px;
+            height: 514px;
+          border-radius: 50px;
+        }
+
+        .box2{
+            width: 1028px;
+            margin-left: auto;
+            margin-right: auto;
+          margin-bottom: 150px;
+        }
+        .box2_img{
+            position: relative;
+        }
+        .box2_item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box2_img img{
+            width: 512px;
+            height: 514px;
+          border-radius: 50px;
+        }
+
+/*-footer-*/
+
+		footer{
+			background-color: #CFCFCF;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+		}
+
+		.footerlist{
+			width: 1440px;
+      height: 410px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 80px;
+      padding-bottom: 5px;
+		}
+
+		.icon2{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      width: 460px;
+      margin: auto;
+      padding-bottom: 50px;
+		}
+
+		.icon2 a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #3d3d3d;
+			margin-right: 20px;
+
+		}
+
+
+		h6{
+			font-size: 18px;
+			color: white;
+			margin-top: 4px;
+      margin-bottom: 10px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+        }
+
+        h7{
+        	font-size: 18px;
+			color: white;
+			margin-top: 10px;
+          margin-bottom: 10px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+        }
+
+
+.line4{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+		    width: 1080px;
+        border-bottom: 1.5px solid white;
+    }
+
+	h8{
+		display: flex;
+    position: relative;
+		width: 1440px;
+		margin-left: 1320px;
+    top: -76px;
+		height: 50px;
+    line-height: 50px;
+		margin-top: 30px;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 30px;
+	}
+
+</style>
+
+
+<body>
+	<header>
+
+<div class="container">
+    <div class="navibar">
+     	<a id="logo" href="index.html">Veganner</a>
+      
+     	<ul id="menu">
+        	<li><a href="index2.html">MENU</a></li>
+		    <li><a href="index3.html">STORE</a></li>
+		    <li><a href="index4.html">MAP</a></li>
+		    <li><a href="index5.html">CONTACT</a></li>
+    	</ul>
+    </div>
+  
+  
+ 	<ul class="list-btn">
+		<li><a href="#"><img src="https://i.postimg.cc/59Sghxt9/search-2.png" height="36px"></a></li>
+    <li><a href="#"><img src="https://i.postimg.cc/sxmJ7JLG/user-2.png" height="36px"></a></li>
+	</ul>
+
+  
+  <h1>GLUTEN-FREE</h1>
+
+</div>
+</header>
+
+
+  <div class="card">
+        <div class="card_item">
+            
+            <a href="#">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/3xV6gStc/food-5158702-1280.jpg">
+                </div>
+            </a>
+          <a href="#">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/Njm8zdgV/bread-1284438-1280.jpg">
+                </div>
+            </a>
+          <a href="#">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/sxW9CmYv/happy-mothers-day-2048732-1280.jpg">
+                    </div>
+                </div>
+            </a>
+    
+    <h2>What?</h2>
+  
+<div class="wrap">
+  <p>밀가루 글루텐은 밀, 귀리, 보리 등에 들어있는 글루테닌과 글리아딘이 결합하여 만들어지는 성분으로 물에 용해되지 않는 성질을 가지고 있는 불용 성 단백질의 종류입니다. 몇 가지 단백질이 혼합되어 존재하고 이 밖에도 당과 지질도 함유되어 있습니다. 간단히 말해서 글루텐은 전분 속에 함유된 물에 녹지 않는 단 백질을 말합니다.
+보통 이 밀가루 글루텐이 문제가 되는 이유는 몸에서 장에 문제를 일으켜서 자가면역 질환을 악화시키기 때문입니다. 피부질환의 종류인 아토피와 여러 알레르기를 동반시키고 장누수 증후군의 원인까지도 발전합니다. 보통 밀가루나 보리에 많이 존재하는 밀가루 글루텐은 위와 장에서 완전히 분해되지 않고 소장에 남아서 장 점막의 면여체계를 자극하며 염증을 유발한다는 것이 글루텐의 유해성 주장의 핵심입니다. 이러한 글루텐프리 뜻 은 밀가루에 함유된 글루텐을 피해서 음식을 먹자라는 의미를 가지고 있습니다.</p>
+  <div><img src="https://i.postimg.cc/LXwwcxXK/dough-943245-1280.jpg"></div>
+  
+</div>
+    
+    <h3>Why?</h3>
+    
+    <div class="wrap2">
+   <div><img src="https://i.postimg.cc/zGWt4g2L/bread-1460403-1280.jpg"></div>
+  <p>밀가루 글루텐 프리의 장점은 글루텐이 유발하는 대표적인 질환인 셀리악병을 피할 수 있습니다. 셀리악병은 글루텐으로 인해 소장의 융모가 손상 을 입어서 위축하는 병을 말합니다. 셀리악병에 걸리게 되면 영양소 흡수가 잘되지 않고 변비나 체중증가, 피로, 두통, 여드름, 속쓰림 등의 증상이 나타날 수 있습니다. 우리나라에서는 쌀을 주식으로 하기 때문에 흔한 병은 아니지만 서구에서는 많이 보이는 질병이라고 합니다. 이 셀리악병에 유 일한 치료방법은 글루텐프리를 하는 것입니다.
+그리고 셀리악병 증상이 없는 사람들도 글루텐이 들어 있지 않은 음식을 먹은 뒤로 몸이 한결 좋아졌다는 사람들이 많기 때문에 서구에서는 글루텐 프리 식생활이 많이 실천되고 있는 것입니다.
+의외로 자신이 글루텐 불내증을 앓고 있지만 자신이 글루텐 불내증이라 는 것을 모른 채 지나가는 경우도 많다고 하는데요, 글루텐 블내증이 있다면 몇 가지 특징이 있을 수 있는 데 그것은 속 쓰림, 현기증, 우울증, 피부질환, 피로 등입니다.</p>
+  
+</div>
+
+    
+    
+    <div class="box">
+        <div class="box_item">
+          
+                <div class="box_img">
+                    <img src="https://i.postimg.cc/FHcDn9tZ/dessert-415374-1280.jpg">
+                </div>
+<div class="box_img">
+                    <img src="https://i.postimg.cc/FRPZJzc9/ella-olsson-2-Ix-Tgsg-Fi-s-unsplash.jpg">
+                </div>      
+      </div>
+    </div>
+    
+    
+    <div class="box2">
+        <div class="box2_item">
+          
+          <div class="box2_img">
+                    <img src="https://i.postimg.cc/7hfN14MS/muffins-267299-1280.jpg">
+                </div>
+          <div class="box2_img">
+                    <img src="https://i.postimg.cc/gjQHN7NQ/baked-2313462-1280.jpg">
+                </div>
+          
+      </div>
+    </div>
+</div>
+
+	<footer>
+		<div class="footerlist">
+      
+		<ul class="icon2">
+		<li><a href="#"><img src="https://i.postimg.cc/sx5n3TVM/instagram-3.png" height="80px"></a></li>
+		<li><a href="#"><img src="https://i.postimg.cc/C1q74cnc/facebook-2.png" height="80px"></a></li>
+		<li><a href="#"><img src="https://i.postimg.cc/ZKZHrFbL/youtube-2.png" height="80px"></a></li>
+	</ul>
+      
+      <div class="line4"></div>
+      
+	<h6>공지사항 | 이용약관 | 개인정보처리방침 | 1:1 문의하기</h6>
+	<h7>copyright © HYUNJI KIM. All Rights Reserved</h7>
+      <h8>Veganner</h8>
+</div>
+	</footer>
+</body>

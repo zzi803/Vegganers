@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veganner3</title>
+
+
+</head>
+
+
+
+<style type="text/css">
+
+
+* {
+		font-family: 'Noto Sans KR', sans-serif;
+		list-style: none;
+		text-decoration: none;
+    box-sizing: border-box;
+	}
+
+	header {
+		border-collapse: collapse;
+		margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+
+	.navibar {
+		display: flex;
+		width: 1280px;
+		margin: auto;
+		height: 50px;
+	}
+
+	.navibar #logo{
+		display: flex;
+		line-height: 50px;
+		margin-top: 30px;
+    color: black;
+    font-size: 30px;
+	}
+
+	.navibar #menu {
+		display: flex;
+		justify-content: flex-end;
+		line-height: 50px;
+		width: calc(1440px - 720px);
+		margin-top: 30px;
+	}
+
+	.navibar #menu li{
+		margin-left: 30px;
+    font-size: 16px;
+	}
+
+	.navibar #menu li a:hover{
+		display: inline-block;
+    background: lightgray;
+	}
+
+	.navibar #menu li a{
+		line-height: 30px;
+		text-decoration: none;
+		display: block;
+		color: black;
+    display: inline-block;
+		border: 2px solid black;
+		border-radius: 20px;
+    background: white;
+    padding-right: 14px;
+    padding-left: 14px;
+	}
+
+	.list-btn{
+		display: flex;
+    justify-content:right;
+		align-items: center;
+    padding-right: 80px;
+    margin-top: -10px;
+	}
+
+	.list-btn li a{
+		margin: 10px;
+	}
+
+
+
+	/*----body----*/
+		.main{
+			width: 1280px;
+			margin: 104px auto;
+		}
+		
+    .main h1{
+            font-size: 80px;
+            color: black;
+            margin-bottom: 20px;
+            text-align: left;
+            margin-top: 250px;
+            font-weight: 500;
+      margin-bottom: 50px;
+        }
+
+		.item{
+			display: flex;
+			flex-flow: row nowrap;
+		}
+		.item a{
+			box-sizing: border-box;
+			width: 285px;
+			height: 400px;
+			color: #FFF;
+			
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+
+			flex-grow: 1;
+			flex-basis: 0;
+			transition: flex-grow 0.3s ease;
+		}
+
+		#img1{
+			background-image: url(https://i.postimg.cc/8C4jmnHH/IMG-2582.png);
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+		}
+		#img2{
+			background-image: url(https://i.postimg.cc/Kj6zYXGZ/common-22.jpg);
+		}
+		#img3{
+			background-image: url(https://i.postimg.cc/Nj7MQPWc/Dx-Yg-Bv-Fb7b-NOHda2-Aqc-AMg.jpg);
+		}
+		#img4{
+			background-image: url(https://i.postimg.cc/k4DXFMDJ/upload-9a35e7467631d4dd99b504e461f0e548.jpg);
+		}
+		#img5{
+			background-image: url(https://i.postimg.cc/yxZ1tfF2/IMG-2581.png);
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+		}
+
+		.item a:hover{
+			flex-grow: 3;
+		}
+
+
+	/*----ovarlay----*/
+		.item .overlay{
+			box-sizing: border-box;
+			width: 100%;
+			height: 100%;
+
+			padding: 104px 38px;
+			background-color: rgba(0, 0, 0, 0.5);
+
+			display: flex;
+			flex-flow: column;
+			opacity: 0;
+			transition: 0.3s ease;
+		}
+
+		.item .overlay3{
+			box-sizing: border-box;
+			width: 100%;
+			height: 100%;
+
+			padding: 104px 38px;
+			background-color: rgba(0, 0, 0, 0.5);
+
+			display: flex;
+			flex-flow: column;
+			opacity: 0;
+			transition: 0.3s ease;
+		}
+
+    .item .overlay1{
+			box-sizing: border-box;
+			width: 100%;
+			height: 100%;
+
+			padding: 104px 38px;
+			background-color: rgba(0, 0, 0, 0.5);
+
+			display: flex;
+			flex-flow: column;
+			opacity: 0;
+			transition: 0.3s ease;
+      border-top-left-radius: 80px;
+      border-bottom-left-radius: 80px;
+		}
+
+    .item .overlay2{
+			box-sizing: border-box;
+			width: 100%;
+			height: 100%;
+
+			padding: 104px 38px;
+			background-color: rgba(0, 0, 0, 0.5);
+
+			display: flex;
+			flex-flow: column;
+			opacity: 0;
+			transition: 0.3s ease;
+      border-top-right-radius: 80px;
+      border-bottom-right-radius: 80px;
+		}
+
+		.overlay3 h2{
+			font-size: 60px;
+      font-weight: 300;
+      margin-top: 240px;
+		}
+
+		.overlay3:hover{
+			opacity: 1;
+		}
+
+
+.line{
+        width: 1280px;
+        margin-top: 100px;
+        border-bottom: 1px solid black;
+    }
+
+
+.wrap{
+  display: flex;
+  width: 1280px;
+  margin-left: 300px;
+}
+
+.wrap h3{
+  flex: 1 0 0;
+  font-weight: 200;
+  padding-right: -100px;
+  font-size: 20px;
+
+}
+.wrap h4{
+  flex: 1 0 0;
+  font-weight: 200;
+  margin-left: -80px;
+  font-size: 20px;
+}
+
+
+.sub{
+  display: block;
+  width: 600px;
+  margin-left: 420px;
+  margin-right: 420px;
+  margin-top: 140px;
+  border: 1px solid black;
+  border-radius: 40px;
+}
+
+.sub img{
+  width: 600px;
+  height: 400px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.sub h5{
+  font-size: 22px;
+  font-weight: 200;
+  margin-left: 16px;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+.sub p{
+  font-size: 16px;
+  font-weight: 100;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.line2{
+        width: 230px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 8px;
+        border-bottom: 1px solid black;
+    }
+
+.line3{
+        display: flex;
+        margin-top: 200px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+		    width: 1280px;
+        border-bottom: 1px solid black;
+    }
+
+
+	.list-btn2{
+		display: flex;
+    width: 1028px;
+    justify-content:space-between;
+		align-items: center;
+    padding-right: 124px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+	}
+
+	.list-btn3{
+		display: flex;
+    width: 1028px;
+    justify-content:space-between;
+		align-items: center;
+    padding-right: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+	}
+
+	.list-btn4{
+		display: flex;
+    width: 1028px;
+    justify-content:space-between;
+		align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 180px;
+	}
+
+
+		footer{
+			background-color: #CFCFCF;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+		}
+
+		.footerlist{
+			width: 1440px;
+      height: 410px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 80px;
+      padding-bottom: 5px;
+		}
+
+		.icon2{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      width: 460px;
+      margin: auto;
+      padding-bottom: 50px;
+		}
+
+		.icon2 a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #3d3d3d;
+			margin-right: 20px;
+
+		}
+
+
+		h6{
+			font-size: 18px;
+			color: white;
+			margin-top: 4px;
+      margin-bottom: 10px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+        }
+
+        h7{
+        	font-size: 18px;
+			color: white;
+			margin-top: 10px;
+          margin-bottom: 10px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+        }
+
+
+.line4{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+		    width: 1080px;
+        border-bottom: 1.5px solid white;
+    }
+
+	h8{
+		display: flex;
+    position: relative;
+		width: 1440px;
+		margin-left: 1320px;
+    top: -76px;
+		height: 50px;
+    line-height: 50px;
+		margin-top: 30px;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 30px;
+	}
+
+</style>
+
+<body>
+	<header>
+
+<div class="container">
+    <div class="navibar">
+     	<a id="logo" href="index1.html">Veganner</a>
+      
+     	<ul id="menu">
+       		<li><a href="index2.html">MENU</a></li>
+		    <li><a href="index3.html">STORE</a></li>
+		    <li><a href="index4.html">MAP</a></li>
+		    <li><a href="index5.html">CONTACT</a></li>
+    	</ul>
+    </div>
+  
+  
+ 	<ul class="list-btn">
+		<li><a href="#"><img src="https://i.postimg.cc/B6G6cBTp/search.png" height="36px"></a></li>
+    <li><a href="#"><img src="https://i.postimg.cc/Df6ZLs8Q/user.png" height="36px"></a></li>
+	</ul>
+
+</div>
+</header>
+
+
+
+		<div class="main">
+      <h1>Store</h1>
+			<div class="item">
+
+				<a id="img1" href="#">
+					<div class="overlay1">
+					</div>
+				</a>
+
+				<a id="img2" href="#">
+					<div class="overlay">
+					</div>
+				</a>
+
+				<a id="img3" href="#">
+					<div class="overlay3">
+						<h2>MODORI</h2>
+					</div>
+				</a>
+        
+				<a id="img4" href="#">
+					<div class="overlay">
+					</div>
+				</a>
+
+				<a id="img5" href="#"><div class="overlay2">
+					</div></a>
+			</div>
+      
+      <div class="line"></div>
+      
+      
+		</div>
+
+<div class="wrap">
+  <h3>모도리:<br>빈틈없이 아주 야무진 사람<br>건강을 생각 하며, 야무진 디저트를 만들어요<br>
+통밀 &비정제 원당을 사용한 디저트<br>
+        우유 / 버터 / 계란 무첨가</h3>
+  <h4>• 얼그레이 스콘<br>• 흑임자 찹쌀 브라우니<br>• 레몬청 파운드<br>• 쑥 무화과 파운드<br>• 호두 찹쌀 휘낭시에
+    </div>
+
+<a href="index4.html">   
+<div class="sub">
+  <div><img src="https://i.postimg.cc/hGsH3mhL/common-21.jpg"></div>
+  <h5>모도리 비건 디저트카페</h5>
+  <div class="line2"></div>
+  <p>Modori Vegan Desert Cafe</p>
+</div>
+</a>
+  
+  
+<div class="line3"></div>
+
+
+
+ 	<ul class="list-btn2">
+		<li><a href="index4.html"><img src="https://i.postimg.cc/ncknxKfj/location.png" height="36px"></a><p>서울 강북구 한천로 1014</p></li>
+    <li><a href="index4.html"><img src="https://i.postimg.cc/pX2ts952/parking-brake.png" height="36px"></a><p>포장, 무선 인터넷, 반려동물 동반</p></li>
+	</ul>
+
+<ul class="list-btn3">
+		<li><a href="https://map.naver.com/v5/entry/place/1126450223?c=14139862.0343378,4528523.7602121,14,0,0,0,dh"><img src="https://i.postimg.cc/Gmp0FZ8z/clock.png" height="36px"></a><p>매주 일, 월 정기휴무 / pm 12~21시</p></li>
+    <li><a href="https://map.naver.com/v5/entry/place/1126450223?c=14139862.0343378,4528523.7602121,14,0,0,0,dh"><img src="https://i.postimg.cc/q7fLJKTn/dog-house.png" height="36px"></a><p>http://instagram.com/modori_vegan</p></li>
+	</ul>
+
+  
+<ul class="list-btn4">
+		<li><a href="https://map.naver.com/v5/entry/place/1126450223?c=14139862.0343378,4528523.7602121,14,0,0,0,dh"><img src="https://i.postimg.cc/B6pcBw1c/phone-call.png" height="36px"></a><p>010-5873-1787</p></li>
+	</ul>
+  
+  
+	<footer>
+		<div class="footerlist">
+      
+		<ul class="icon2">
+		<li><a href="#"><img src="https://i.postimg.cc/sx5n3TVM/instagram-3.png" height="80px"></a></li>
+		<li><a href="#"><img src="https://i.postimg.cc/C1q74cnc/facebook-2.png" height="80px"></a></li>
+		<li><a href="#"><img src="https://i.postimg.cc/ZKZHrFbL/youtube-2.png" height="80px"></a></li>
+	</ul>
+      
+      <div class="line4"></div>
+      
+	<h6>공지사항 | 이용약관 | 개인정보처리방침 | 1:1 문의하기</h6>
+	<h7>copyright © HYUNJI KIM. All Rights Reserved</h7>
+      <h8>Veganner</h8>
+</div>
+	</footer>
+
+</body>

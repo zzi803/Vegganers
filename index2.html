@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Veganner2</title>
+
+
+</head>
+
+
+
+<style type="text/css">
+
+* {
+		font-family: 'Noto Sans KR', sans-serif;
+		list-style: none;
+		text-decoration: none;
+    box-sizing: border-box;
+	}
+
+	header {
+		border-collapse: collapse;
+		margin: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+
+	.navibar {
+		display: flex;
+		width: 1280px;
+		margin: auto;
+		height: 50px;
+	}
+
+	.navibar #logo{
+		display: flex;
+		line-height: 50px;
+		margin-top: 30px;
+    color: black;
+    font-size: 30px;
+	}
+
+	.navibar #menu {
+		display: flex;
+		justify-content: flex-end;
+		line-height: 50px;
+		width: calc(1440px - 720px);
+		margin-top: 30px;
+	}
+
+	.navibar #menu li{
+		margin-left: 30px;
+    font-size: 16px;
+	}
+
+	.navibar #menu li a:hover{
+		display: inline-block;
+    background: lightgray;
+	}
+
+	.navibar #menu li a{
+		line-height: 30px;
+		text-decoration: none;
+		display: block;
+		color: black;
+    display: inline-block;
+		border: 2px solid black;
+		border-radius: 20px;
+    background: white;
+    padding-right: 14px;
+    padding-left: 14px;
+	}
+
+	.list-btn{
+		display: flex;
+    justify-content:right;
+		align-items: center;
+    padding-right: 80px;
+    margin-top: -10px;
+	}
+
+	.list-btn li a{
+		margin: 10px;
+	}
+
+
+
+
+/*-card-*/
+
+        .card h2{
+            font-size: 80px;
+            color: black;
+            margin-bottom: 20px;
+            text-align: left;
+            margin-top: 250px;
+            font-weight: 500;
+          margin-bottom: 50px;
+        }
+
+        .card{
+            display: block;
+            margin-top: 80px;
+            width: 1280px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 200px;
+            flex-wrap: wrap;
+            gap: 50px;
+            text-align: center;
+          
+          
+        }
+
+        .card h3{
+            font-size: 20px;
+            color: white;
+            margin-bottom: 20px;
+            text-align: left;
+            margin-top: 200px;
+            font-weight: 500;
+        }
+
+
+        .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            height: 100%;
+            width: 260px;
+            color: rgb(236, 236, 236);
+            padding-left: 20px;
+            opacity: 0;
+            transition: all 0.8s ease;
+            border-radius: 50px;
+        }
+        .text:hover{
+            opacity: 1;
+        }
+        .card_img{
+            position: relative;
+            display: flex;
+          flex-wrap: wrap;
+          margin-bottom: 30px;
+          border-radius: 50px;
+        }
+        .card_item{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .card_img img{
+            width: 260px;
+            height: 300px;
+            border-radius: 50px;
+        }
+        .text h2{
+            font-size: 18px;
+            text-align: left;
+            margin-top: 200px;
+        }
+        .text p{
+            text-align: left;
+            font-size: 14px;
+            font-weight: 800;
+            margin-top: 10px;
+        }
+
+
+		footer{
+			background-color: #CFCFCF;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+		}
+
+		.footerlist{
+			width: 1440px;
+      height: 410px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 80px;
+      padding-bottom: 5px;
+		}
+
+		.icon2{
+			list-style: none;
+			display: flex;
+			font-family: 'Noto Sans KR', sans-serif;
+      justify-content: space-between;
+      align-items: center;
+      display: flex;
+      width: 460px;
+      margin: auto;
+      padding-bottom: 50px;
+		}
+
+		.icon2 a{
+			font-size: 12px;
+			text-decoration: none;
+			color: #3d3d3d;
+			margin-right: 20px;
+
+		}
+
+
+		h6{
+			font-size: 18px;
+			color: white;
+			margin-top: 4px;
+      margin-bottom: 10px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+        }
+
+        h7{
+        	font-size: 18px;
+			color: white;
+			margin-top: 10px;
+          margin-bottom: 10px;
+			font-family: 'Noto Sans KR', sans-serif;
+			font-weight: 300;
+        }
+
+
+.line4{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+		    width: 1080px;
+        border-bottom: 1.5px solid white;
+    }
+
+	h8{
+		display: flex;
+    position: relative;
+		width: 1440px;
+		margin-left: 1320px;
+    top: -76px;
+		height: 50px;
+    line-height: 50px;
+		margin-top: 30px;
+    margin-bottom: 2px;
+    color: white;
+    font-size: 30px;
+	}
+
+</style>
+
+<body>
+	<header>
+
+<div class="container">
+    <div class="navibar">
+     	<a id="logo" href="index1.html">Veganner</a>
+      
+     	<ul id="menu">
+        	<li><a href="index2.html">MENU</a></li>
+		    <li><a href="index3.html">STORE</a></li>
+		    <li><a href="index4.html">MAP</a></li>
+		    <li><a href="index5.html">CONTACT</a></li>
+    	</ul>
+    </div>
+  
+  
+ 	<ul class="list-btn">
+		<li><a href="#"><img src="https://i.postimg.cc/B6G6cBTp/search.png" height="36px"></a></li>
+    <li><a href="#"><img src="https://i.postimg.cc/Df6ZLs8Q/user.png" height="36px"></a></li>
+	</ul>
+
+
+
+</div>
+</header>
+
+<div class="card">
+  <h2>Menu</h2>
+        <div class="card_item">
+            
+            <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/FKRfgwc4/IMG-2580.png">
+                    <div class="text"> <h3>말차 초코 스콘</h3><p>모도리 비건 디저트카페</p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/0QTHLc6B/IMG-2593.png">
+                    <div class="text"> <h3>레밍턴 케이크</h3><p>디어 비건 베이커리</p>
+                    </div>
+                </div>
+            </a>
+          <a href="#">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/sftLhZqj/1.png">
+                    <div class="text"> <h2></h2><p></p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/rFnwxr7P/IMG-2597.png">
+                    <div class="text"> <h3>당근 케이크</h3><p>비건 비긴스</p>
+                    </div>
+                </div>
+            </a>
+          <a href="#">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/44KMy182/1-1.png">
+                    <div class="text"> <h3></h3><p></p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/bJmwgSsr/IMG-2588.png">
+                    <div class="text"> <h3>비건무스</h3><p>디어 비건 베이커리</p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/90t5bvxp/IMG-2584.png">
+                    <div class="text"> <h3>얼그레이 스콘</h3><p>모도리 비건 디저트카페</p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/D0mLPTyV/IMG-2595.png">
+                    <div class="text"> <h3>피자 두부롤</h3><p>스윗 비건 베이커리</p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/fbLdNsmV/IMG-2602.png">
+                    <div class="text"> <h3>비건 시나몬롤</h3><p>소보리 제빵소</p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/43zDXCGT/IMG-2583.png">
+                    <div class="text"> <h3>레몬청 파운드 케이크</h3><p>모도리 비건 디저트카페</p>
+                    </div>
+                </div>
+            </a>
+          <a href="index3.html">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/Jnsdt9Vn/IMG-2603.png">
+                    <div class="text"> <h3>비건 소세지빵</h3><p>소보리 제빵소</p>
+                    </div>
+                </div>
+            </a>
+          <a href="#">
+                <div class="card_img">
+                    <img src="https://i.postimg.cc/DyLMdw3q/1-2.png">
+                    <div class="text"> <h3></h3><p></p>
+                    </div>
+                </div>
+            </a>
+
+           
+
+        </div>
+    </div>
+
+
+	<footer>
+		<div class="footerlist">
+      
+		<ul class="icon2">
+		<li><a href="#"><img src="https://i.postimg.cc/sx5n3TVM/instagram-3.png" height="80px"></a></li>
+		<li><a href="#"><img src="https://i.postimg.cc/C1q74cnc/facebook-2.png" height="80px"></a></li>
+		<li><a href="#"><img src="https://i.postimg.cc/ZKZHrFbL/youtube-2.png" height="80px"></a></li>
+	</ul>
+      
+      <div class="line4"></div>
+      
+	<h6>공지사항 | 이용약관 | 개인정보처리방침 | 1:1 문의하기</h6>
+	<h7>copyright © HYUNJI KIM. All Rights Reserved</h7>
+      <h8>Veganner</h8>
+</div>
+	</footer>
+
+</body>
